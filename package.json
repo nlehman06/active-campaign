@@ -1,17 +1,9 @@
 {
-  "name": "starter-webpack-angularjs",
+  "name": "activecampaign-contacts-exercise",
   "version": "1.0.0",
-  "description": "A starter for a project with AngularJS (1.x), Bootstrap (4.x) and Font Awesome (4.x) powered by Webpack (3.x).",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cducrot/starter-webpack-angularjs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/cducrot/starter-webpack-angularjs/issues"
-  },
-  "homepage": "https://github.com/cducrot/starter-webpack-angularjs",
+  "description": "ActiveCampaign contacts exercise",
   "keywords": [],
-  "author": "Christian Ducrot <christian@ducrot.de>",
+  "author": "",
   "license": "MIT",
   "browserslist": [
     ">1%"
@@ -59,7 +51,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
-    "uglifyjs-webpack-plugin": "^2.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
