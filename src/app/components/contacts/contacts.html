@@ -1,0 +1,27 @@
+<section id="contacts">
+
+   <div class="container">
+      <h1>Contacts</h1>
+
+      <ul class="list-group">
+         <li class="list-group-item" ng-repeat="contact in contacts.contacts">
+            <div class="row">
+               <div class="col-sm-3">{{ contact.firstName }} {{ contact.lastName }}</div>
+               <div class="col-sm-1 text-right">${{ contacts.sumValues(contact.scoreValues) | number:0 }}</div>
+               <div class="col-sm-3">{{ contacts.location(contact.id) }}</div>
+               <div class="col-sm-1">{{ contacts.dealsCount(contact.id) }}</div>
+               <div class="col-sm-3">{{ contacts.listTags(contact.id) }}</div>
+               <div class="col-sm-1"></div>
+            </div>
+         </li>
+      </ul>
+      <nav aria-label="Page navigation">
+         <ul class="pagination">
+            <li class="page-item" ng-class="{disabled: contacts.disablePrevious()}"><button class="page-link" ng-click="contacts.getPreviousPage()" ng-disabled="contacts.disablePrevious()">Previous</button></li>
+            <li class="page-item"><button class="page-link" ng-click="contacts.getNextPage(); $event.stopPropagation();">Next</button></li>
+         </ul>
+      </nav>
+
+   </div>
+
+</section>

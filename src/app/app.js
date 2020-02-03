@@ -9,11 +9,9 @@ import routing from './app.config'
 import AppController from './app.controller'
 
 import home from './components/home';
-import blog from './components/blog';
-import grids from './components/grids';
-import album from './components/album';
+import contacts from './components/contacts';
 
 angular
-    .module('app', [ngAnimate, ngTouch, collapse, uirouter, home, blog, grids, album])
+    .module('app', [ngAnimate, ngTouch, collapse, uirouter, home, contacts])
     .config(routing)
     .controller('AppController', AppController)
