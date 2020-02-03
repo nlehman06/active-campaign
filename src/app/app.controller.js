@@ -1,9 +1,10 @@
 /* @ngInject */
 export default class AppController {
 
-    constructor() {
+    constructor($rootScope) {
         this.isCollapsed = true
-        this.date = new Date()
+        this.date = new Date();
+        this.rootScope = $rootScope;
     }
 
 }

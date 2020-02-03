@@ -15,7 +15,7 @@
             </div>
          </li>
       </ul>
-      <nav aria-label="Page navigation">
+      <nav aria-label="Page navigation" ng-show="contacts.contacts.length">
          <ul class="pagination">
             <li class="page-item" ng-class="{disabled: contacts.disablePrevious()}"><button class="page-link" ng-click="contacts.getPreviousPage()" ng-disabled="contacts.disablePrevious()">Previous</button></li>
             <li class="page-item"><button class="page-link" ng-click="contacts.getNextPage(); $event.stopPropagation();">Next</button></li>

@@ -25,6 +25,13 @@
     </div>
 </header>
 
+<div class="alert alert-danger" role="alert" ng-show="app.rootScope.dangerAlert">
+   {{ app.rootScope.dangerAlert }}
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close" ng-click="app.rootScope.dangerAlert = null">
+      <span aria-hidden="true">&times;</span>
+   </button>
+</div>
+
 <main class="main" role="main">
     <ui-view></ui-view>
 </main>

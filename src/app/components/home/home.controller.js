@@ -1,8 +1,12 @@
-/* @ngInject */
-export default class HomeController {
 
-    constructor () {
+class HomeController {
+
+    constructor ($rootScope) {
+       this.rootScope = $rootScope;
     }
 
 
 }
+HomeController.$inject = ['$rootScope']
+/* @ngInject */
+export default HomeController

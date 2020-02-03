@@ -1,7 +1,7 @@
 /* @ngInject */
 export default class ContactsController {
 
-   constructor(activeCampaign) {
+   constructor(activeCampaign, $rootScope) {
       this.activeCampaign = activeCampaign;
       this.contacts = [];
       this.tags = [];
@@ -10,6 +10,7 @@ export default class ContactsController {
       this.contactData = [];
       this.offset = 0;
       this.meta = undefined;
+      this.rootScope = $rootScope;
       this.getContacts();
    }
 
@@ -25,6 +26,7 @@ export default class ContactsController {
          })
          .catch(error => {
             console.log(error)
+            this.rootScope.dangerAlert = error;
          });
    }
 
