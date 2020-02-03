@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && cp ./netlify/_redirects ./dist/_redirects",
     "test": "karma start",
     "test:live": "karma start --auto-watch --no-single-run"
   },
